@@ -49,9 +49,9 @@ public class ExerciseAnswers {
     public void upperCaseWords() {
         List<String> output =
             wordList.stream()
-                    .map(String::toUpperCase)
+                    .map(s -> s.toUpperCase())
                     .collect(toList());
-        
+
         assertEquals(
             Arrays.asList(
                 "EVERY", "PROBLEM", "IN", "COMPUTER", "SCIENCE",
@@ -97,7 +97,6 @@ public class ExerciseAnswers {
     public void joinLineRange() throws IOException {
         String output =
             reader.lines().skip(2).limit(2)
-                  //.substream(2, 4)
                   .collect(joining());
         
         assertEquals(
@@ -160,7 +159,7 @@ public class ExerciseAnswers {
             reader.lines()
                   .flatMap(line -> Stream.of(line.split(REGEXP)))
                   .filter(word -> word.length() > 0)
-                  .map(String::toLowerCase)
+                  .map(s -> s.toLowerCase())
                   .sorted()
                   .collect(toList());
         
@@ -194,7 +193,7 @@ public class ExerciseAnswers {
             reader.lines()
                   .flatMap(line -> Stream.of(line.split(REGEXP)))
                   .filter(word -> word.length() > 0)
-                  .map(String::toLowerCase)
+                  .map(s -> s.toLowerCase())
                   .distinct()
                   .sorted(comparingInt(String::length).thenComparing(naturalOrder()))
                   .collect(toList());
