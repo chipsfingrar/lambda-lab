@@ -300,7 +300,6 @@ public class ExerciseAnswers {
         "every", "problem", "in", "computer", "science",
         "can", "be", "solved", "by", "adding", "another",
         "level", "of", "indirection");
-            // Butler Lampson
 
     static final String REGEXP = "\\W+"; // for splitting into words
 

@@ -207,15 +207,6 @@ public class Exercises {
     public void wordFrequencies() throws IOException {
         Map<String, Long> map = null; /* TODO */
 
-// Alternate solution: 
-
-//            reader.lines()
-//                 .flatMap(line -> Stream.of(line.split(REGEXP)))
-//                 .filter(word -> word.length() > 0)
-//                 .collect(toMap(Function.identity(),
-//                                w -> 1L,
-//                                Long::sum));
-        
         assertEquals(2L, (long)map.get("tender"));
         assertEquals(6L, (long)map.get("the"));
         assertEquals(1L, (long)map.get("churl"));
@@ -252,18 +243,11 @@ public class Exercises {
         "every", "problem", "in", "computer", "science",
         "can", "be", "solved", "by", "adding", "another",
         "level", "of", "indirection");
-            // Butler Lampson
 
     static final String REGEXP = "\\W+"; // for splitting into words
 
     private BufferedReader reader;
 
-
-    @Test
-    public void testNam() throws Exception {
-        reader.lines().forEach(s -> System.out.println());
-
-    }
 
     @Before
     public void setUpBufferedReader() throws IOException, URISyntaxException {
