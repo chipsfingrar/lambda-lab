@@ -33,7 +33,7 @@
 
   Om du är bekväm med att använda git kör du
 
-    git clone git@github.com:soulution/lamda-lab.git
+    git clone git@github.com:soulution/lambda-lab.git
 
   Det går också bra att ladda ner koden som en Zip-fil från GitHub.
 
