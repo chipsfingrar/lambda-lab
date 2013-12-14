@@ -52,11 +52,11 @@
     [INFO] Final Memory: 15M/189M
     [INFO] ------------------------------------------------------------------------
 
+#Kodexempel
+**src/test/java/Streams.java** innehåller ett antal kodexempel som demonstrerar grundläggande funktionalitet i Streams API. 
 
 #Instruktioner
-Öppna filen **Exercises.java**. Övningarna är utformade som enhetstester med *assertions*. Påbörja
-en uppgift genom att ta bort annoteringen ``@Ignore``. Pröva lösningen genom att köra
-maven-bygget med
+Öppna filen **src/test/java/excercises/Exercises.java**. Övningarna är utformade som enhetstester med *assertions*. Påbörja en uppgift genom att ta bort annoteringen ``@Ignore``. Pröva lösningen genom att köra maven-bygget med
 
     mvn clean install
 
